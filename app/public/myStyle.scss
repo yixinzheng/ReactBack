@@ -1,0 +1,388 @@
+$header-height:90px;
+$body-fs:12px;
+$header-logo-fs:22px;
+$header-i-fs:20px;
+$theme-color:#108ee9;
+$header-color:#3b3f4f;
+body{
+  font-size: $body-fs;
+}
+.header{
+  background-color: $header-color;
+  width: 100%;
+  overflow: hidden;
+  height:$header-height;
+  color: #fff;
+  line-height: $header-height;
+  & .h-logo{
+    font-size: $header-logo-fs;
+  }
+  & .h-col{
+    text-align: center;
+    line-height: 25px;
+    margin-top: 20px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    i{
+      font-size: $header-i-fs;
+    }
+  }
+}
+.txt-center{
+  text-align: center;
+}
+.txt-right{
+  text-align: right;
+}
+.txt-left{
+  text-align: left;
+}
+body{
+  background-color: #efefef;
+}
+
+$left-titleh:61px;
+/* 左侧导航固定宽度 */
+#leftMenu {
+  width: 15%;
+  float: left;
+  background: $theme-color;
+  border-right: 1px solid #e9e9e9;
+  & .left-title{
+    height:$left-titleh;
+    line-height: $left-titleh;
+    background-color: #555;
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 100%;
+  }
+}
+
+.login-box{
+  background-color: #00abdf;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  color: #fff;
+  .login-form{
+    width: 400px;
+    padding: 30px 30px 6px;
+    margin: 50px auto;
+    text-align: left;
+    background-color: #fff;
+    border-radius:5px;
+  }
+  .login-title{
+    font-size: 72px;
+    margin-top: 50px;
+  }
+  .login-stitle{
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  .login-form-register {
+    float: right;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+  .login-footer{
+    font-size: 12px;
+    margin: 150px auto 50px;
+  }
+}
+#rightWrap{
+  width: 83%;
+  margin: 1%;
+  float: left;
+  .main{
+    background-color: #fff;
+    padding: 15px;
+    min-height: 700px;
+  }
+}
+.clearfix{
+  zoom: 1;
+}
+.clearfix:after{
+  clear: both;
+  content:'';
+  height:0;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/*重写*/
+.ant-breadcrumb{
+  width: 100%;
+  margin-bottom: 10px;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 2em;
+  background: #FFFFFF;
+}
+
+.main-card{
+  width: 32%;
+  height: 310px;
+  float: left;
+  margin-right: 2%;
+  position: relative;
+  margin-bottom: 15px;
+  .main-card-head{
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: bold;
+    padding-left:15px;
+    font-size: 22px;
+  }
+  .main-card-extra{
+    position: absolute;
+    right:10px;
+    top:0;
+    line-height: 48px;
+    a{
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+  .main-table{
+    width: 100%;
+    line-height: 40px;
+    border: none;
+    text-align: center;
+    thead{
+      background-color: #f5f5f5;
+      color: #333;
+      font-size: 14px;
+    }
+    tbody td{
+      border-bottom: 1px solid #f5f5f5;
+    }
+  }
+  .main-cont{
+    text-align: center;
+    margin-top: 60px;
+    .main-cicle{
+      display: inline-block;
+      width: 125px;
+      height: 125px;
+      border-radius:50%;
+      margin: 0 10px;
+      text-align: center;
+      .p1{
+        line-height: 45px;
+        margin-top: 20px;
+        font-size: 40px;
+      }
+      .p2{
+        font-size: 18px;
+        color: #333;
+      }
+    }
+  }
+
+}
+.main-card.echart{
+  width: 100%;
+  clear: both;
+  height: auto;
+}
+.main .main-card:nth-child(3n){
+  margin-right: 0;
+}
+
+.setting-tb{
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-right: 0;
+  border-bottom: 0;
+  margin: 27px 0 0;
+  & th{
+    height: 38px;
+    background: $theme-color;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: lighter;
+  }
+  & tr td{
+    border-right: 1px solid #dddddd;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    padding: 15px;
+    color: $theme-color;
+    background-color: #eef2fe;
+  }
+  & tr.border-none td{
+    border:none;
+  }
+  & .ant-form-item{
+    margin-bottom: 0;
+  }
+}
+
+.setting-one{
+  width: 730px;
+}
+.setting-btn-line{
+  text-align: center;
+  margin-top: 15px;
+}
+.setting-ad{
+  width: 100%;
+  margin-top: 30px;
+  .tr-img{
+    max-width: 180px;
+    max-height: 80px;
+  }
+}
+.input-filebox{
+  position: relative;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  color:#fff;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 15px;
+  border-radius:5px;
+  background-color: $theme-color;
+  display: inline-block;
+}
+.input-filebox input[type='file']{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter:alpha(opacity=0);
+}
+.upload-img{
+  border: 1px solid #adc87d;
+  width: 250px;
+  height: 100px;
+  margin: 30px 0;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.setting-logo{
+  width: 750px;
+  margin-top: 30px;
+  .ant-col-6{
+    text-align: center;
+  }
+}
+.setting-search-line{
+  background-color: #eceff6;
+  line-height: 40px;
+  margin-bottom: 30px;
+  padding: 0 10px 4px;
+}
+.ant-btn.setting-search-btn{
+  background-color: $theme-color;
+  color: #fff;
+}
+.setting-add-btn{
+  font-size: 14px;
+  color: #fff;
+  background-color: $theme-color;
+  border-radius:5px;
+  margin-top: 5px;
+  height: 30px;
+  line-height: 30px;
+  width: 130px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+.theme-color{
+  color: $theme-color;
+}
+.mgb30{
+  margin-bottom: 30px;
+}
+
+.pagination-line{
+  margin-top: 30px;
+}
+.detail-tb{
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  border-left:1px solid #e5e5e5;
+  line-height: 40px;
+  & td{
+    word-break:break-all;
+    word-wrap:break-word;
+    border-bottom: 1px solid #e5e5e5;
+    border-right:1px solid #e5e5e5;
+    padding-left: 20px;
+  }
+  & td:first-child{
+    text-align: left;
+  }
+}
+.form-row{
+  margin-top: 20px;
+}
+.addsort-title{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+  border-bottom: 1px dotted #e9e9e9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+textarea[name="editorValue"]{
+  display: none;
+}
+.pdl30{
+  padding-left: 30px;
+}
+.pdr30{
+  padding-right: 30px;
+}
+.order-detail-tb{
+  text-align: left;
+  & tr td{
+    text-align: left;
+  }
+}
+
+.my-cursor{
+  cursor: pointer;
+}
+
+.vertical-center-modal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-center-modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.vertical-center-modal .ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}
+
+.upload-list-inline .ant-upload-list-item {
+  display: inline-block;
+  width: 66px;
+  margin-right: 8px;
+}
